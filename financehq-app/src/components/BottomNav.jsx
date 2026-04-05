@@ -9,12 +9,12 @@ export default function BottomNav({ activePage, setActivePage }) {
   return (
     <nav style={{
       position: 'fixed', bottom: 0, left: 0, width: '100%', zIndex: 50,
-      background: 'rgba(8,19,41,0.9)',
+      background: 'rgba(15,15,15,0.9)',
       backdropFilter: 'blur(24px)',
       WebkitBackdropFilter: 'blur(24px)',
-      borderTop: '1px solid rgba(56,71,109,0.15)',
+      borderTop: '1px solid rgba(255,255,255,0.05)',
       borderRadius: '24px 24px 0 0',
-      boxShadow: '0 -4px 40px rgba(144,147,255,0.04)',
+      boxShadow: '0 -4px 40px rgba(255,136,0,0.04)',
     }}>
       <div style={{
         display: 'flex', justifyContent: 'space-around', alignItems: 'center',
@@ -30,7 +30,7 @@ export default function BottomNav({ activePage, setActivePage }) {
                 display: 'flex', flexDirection: 'column', alignItems: 'center',
                 justifyContent: 'center', gap: 2,
                 color: isActive ? 'var(--primary)' : 'var(--on-surface-variant)',
-                background: isActive ? 'rgba(144,147,255,0.10)' : 'transparent',
+                background: isActive ? 'rgba(255,136,0,0.10)' : 'transparent',
                 border: 'none', borderRadius: 12, padding: '4px 12px',
                 cursor: 'pointer', transition: 'all 0.3s ease',
                 opacity: isActive ? 1 : 0.7,

@@ -1,7 +1,7 @@
 const segments = [
-  { label: 'Housing', color: '#9093ff', pct: 60, dashOffset: 100.5 },
-  { label: 'Dining', color: '#4edea3', pct: 20, dashOffset: 201 },
-  { label: 'Tech & Travel', color: '#ddb7ff', pct: 20, dashOffset: 230 },
+  { label: 'Housing', color: '#ff8800', pct: 60, dashOffset: 100.5 },
+  { label: 'Dining', color: '#ffb84d', pct: 20, dashOffset: 201 },
+  { label: 'Tech & Travel', color: '#ffc2b3', pct: 20, dashOffset: 230 },
 ]
 
 export default function SpendingDonut() {
@@ -18,17 +18,17 @@ export default function SpendingDonut() {
           viewBox="0 0 100 100"
         >
           {/* Background track */}
-          <circle cx="50" cy="50" r="40" fill="none" stroke="#142449" strokeWidth="12" />
+          <circle cx="50" cy="50" r="40" fill="none" stroke="#222222" strokeWidth="12" />
           {/* Housing 60% */}
-          <circle cx="50" cy="50" r="40" fill="none" stroke="#9093ff"
+          <circle cx="50" cy="50" r="40" fill="none" stroke="#ff8800"
             strokeDasharray="251.2" strokeDashoffset="100.5"
             strokeLinecap="round" strokeWidth="12" />
           {/* Dining 20% */}
-          <circle cx="50" cy="50" r="40" fill="none" stroke="#4edea3"
+          <circle cx="50" cy="50" r="40" fill="none" stroke="#ffb84d"
             strokeDasharray="251.2" strokeDashoffset="201"
             strokeLinecap="round" strokeWidth="12" />
           {/* Tech 10% */}
-          <circle cx="50" cy="50" r="40" fill="none" stroke="#ddb7ff"
+          <circle cx="50" cy="50" r="40" fill="none" stroke="#ffc2b3"
             strokeDasharray="251.2" strokeDashoffset="230"
             strokeLinecap="round" strokeWidth="12" />
         </svg>

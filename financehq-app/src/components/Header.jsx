@@ -17,10 +17,10 @@ export default function Header({ activePage, setActivePage }) {
   return (
     <header style={{
       position: 'fixed', top: 0, width: '100%', zIndex: 50,
-      background: 'rgba(6,14,32,0.80)',
+      background: 'rgba(15,15,15,0.80)',
       backdropFilter: 'blur(32px)',
       WebkitBackdropFilter: 'blur(32px)',
-      boxShadow: '0 4px 30px rgba(0,0,0,0.1)',
+      boxShadow: '0 4px 30px rgba(0,0,0,0.3)',
     }}>
       <div style={{
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',
@@ -30,7 +30,7 @@ export default function Header({ activePage, setActivePage }) {
         <div style={{ display: 'flex', alignItems: 'center', gap: 32 }}>
           <span style={{
             fontSize: 20, fontWeight: 800,
-            background: 'linear-gradient(90deg, #9093ff, #7073ff)',
+            background: 'linear-gradient(90deg, #ff8800, #ffb84d)',
             WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
             backgroundClip: 'text',
           }}>
@@ -53,7 +53,7 @@ export default function Header({ activePage, setActivePage }) {
                   fontFamily: 'Inter, sans-serif',
                 }}
                 onMouseEnter={e => {
-                  if (activePage !== link.id) e.currentTarget.style.background = 'rgba(20,36,73,0.5)'
+                  if (activePage !== link.id) e.currentTarget.style.background = 'rgba(255,255,255,0.05)'
                 }}
                 onMouseLeave={e => {
                   e.currentTarget.style.background = 'transparent'
@@ -90,7 +90,7 @@ export default function Header({ activePage, setActivePage }) {
             onClick={() => setActivePage('profile')}
             style={{
             width: 32, height: 32, borderRadius: '50%', overflow: 'hidden',
-            border: '1px solid rgba(56,71,109,0.3)', cursor: 'pointer'
+            border: '1px solid rgba(255,255,255,0.1)', cursor: 'pointer'
           }}>
             <img
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0RIWZ6ouXj_KSuct7UrBzsU1qwDpj2akINmmBk6xFCB0zIzfhb4zydg5W2ovdJVU-o50kXbg5-Xi4YldCV9kBPf_Pl0qTCOrKKbdEx5zJ0puqLj_WNtLUmyYMn3RBsDzINYoZgw6mBsRURdy_Bm0dLOdmmXtSj503jQJBiYnFrYN2m5kMmtLLqzr_tlgpKYKU4rA9EItgIj1uLZU9C9yHi9iK7N9TyIM6OVgGx0sMppv40yPt7J2lfosHkglKA8ULR11H1cAn2ds"
