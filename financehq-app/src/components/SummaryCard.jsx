@@ -7,7 +7,6 @@ export default function SummaryCard({ label, value, change, changeType, changeLa
         transition: 'all 0.3s ease',
       }}
     >
-      {/* Background icon */}
       <div style={{
         position: 'absolute', top: 0, right: 0, padding: 24,
         opacity: 0.1, transition: 'opacity 0.3s',

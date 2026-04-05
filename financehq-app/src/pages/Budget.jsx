@@ -51,7 +51,6 @@ export default function Budget() {
 
   return (
     <div style={{ paddingTop: 80, paddingBottom: 96, paddingLeft: 24, paddingRight: 24, maxWidth: 1280, margin: '0 auto' }}>
-      {/* Hero Summary */}
       <section style={{
         display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
         alignItems: 'flex-end', gap: 24, marginTop: 16, marginBottom: 32,
@@ -104,7 +103,6 @@ export default function Budget() {
         </div>
       </section>
 
-      {/* Bento Grid */}
       <div style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
@@ -116,7 +114,6 @@ export default function Budget() {
         </div>
       </div>
 
-      {/* AI Insights */}
       <section style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
@@ -125,7 +122,6 @@ export default function Budget() {
         {insights.map(ins => <InsightCard key={ins.title} {...ins} />)}
       </section>
 
-      {/* Add Category Modal */}
       {isModalOpen && (
         <div style={{
           position: 'fixed', inset: 0, zIndex: 100,

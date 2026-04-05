@@ -14,26 +14,20 @@ export default function BudgetDistributionChart() {
         Budget Distribution
       </h3>
 
-      {/* SVG Ring */}
       <div style={{ position: 'relative', width: 192, height: 192, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <svg style={{ width: '100%', height: '100%', transform: 'rotate(-90deg)' }}>
-          {/* Track */}
           <circle cx="96" cy="96" r="80" fill="transparent"
             stroke="rgba(20,36,73,0.3)" strokeWidth="16" />
-          {/* Essential 65% */}
           <circle cx="96" cy="96" r="80" fill="transparent"
             stroke="#9093ff" strokeDasharray="502" strokeDashoffset="120"
             strokeWidth="16" className="neon-line" />
-          {/* Savings 20% */}
           <circle cx="96" cy="96" r="80" fill="transparent"
             stroke="#4edea3" strokeDasharray="502" strokeDashoffset="400"
             strokeWidth="16" className="neon-line" />
-          {/* Leisure 15% */}
           <circle cx="96" cy="96" r="80" fill="transparent"
             stroke="#ddb7ff" strokeDasharray="502" strokeDashoffset="460"
             strokeWidth="16" className="neon-line" />
         </svg>
-        {/* Center text */}
         <div style={{
           position: 'absolute', inset: 0, display: 'flex',
           flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
@@ -45,7 +39,6 @@ export default function BudgetDistributionChart() {
         </div>
       </div>
 
-      {/* Legend */}
       <div style={{ marginTop: 32, display: 'flex', flexDirection: 'column', gap: 12 }}>
         {distribution.map(d => (
           <div key={d.label} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 14 }}>

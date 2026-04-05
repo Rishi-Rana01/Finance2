@@ -97,7 +97,6 @@ export default function Wallet() {
         })}
       </section>
 
-      {/* Add Card Modal */}
       {isModalOpen && (
         <div style={{
           position: 'fixed', inset: 0, zIndex: 100,

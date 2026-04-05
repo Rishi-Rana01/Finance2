@@ -50,7 +50,6 @@ export default function Dashboard() {
     },
   ]
 
-  // Mock data for exports
   const exportData = () => {
     return [
       { id: 1, merchant: "Apple Store", category: "Technology", amount: -1299.00, date: "2023-10-24", status: "PENDING" },
@@ -87,7 +86,6 @@ export default function Dashboard() {
 
   return (
     <div style={{ paddingTop: 96, paddingBottom: 112, paddingLeft: 24, paddingRight: 24, maxWidth: 1536, margin: '0 auto' }}>
-      {/* Page header */}
       <section style={{
         display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between',
         alignItems: 'flex-end', gap: 16, marginBottom: 32,
@@ -129,14 +127,12 @@ export default function Dashboard() {
         </div>
       </section>
 
-      {/* Summary Cards */}
       <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 24, marginBottom: 32 }}>
         {summaryCards.map(card => (
           <SummaryCard key={card.label} {...card} />
         ))}
       </section>
 
-      {/* Balance Trend Chart */}
       <section style={{
         background: 'var(--surface-container-low)',
         padding: 32, borderRadius: 24, marginBottom: 32,
@@ -176,7 +172,6 @@ export default function Dashboard() {
         <BalanceTrendChart activeRange={activeRange} />
       </section>
 
-      {/* Bottom Grid */}
       <section style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
@@ -186,10 +181,8 @@ export default function Dashboard() {
         <TransactionList />
       </section>
 
-      {/* AI Insight Floating Chip */}
       <AIInsightChip />
 
-      {/* Add Transaction Modal */}
       {isTxModalOpen && (
         <div style={{
           position: 'fixed', inset: 0, zIndex: 100,

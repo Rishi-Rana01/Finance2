@@ -22,7 +22,6 @@ const CustomTooltip = ({ active, payload, label }) => {
 };
 
 export default function BalanceTrendChart({ activeRange }) {
-  // Dummy data generated per range
   const dataMap = {
     '1W': [
       { name: 'Mon', balance: 39500 }, { name: 'Tue', balance: 41200 }, 

@@ -9,9 +9,8 @@ import Profile from './pages/Profile'
 
 export default function App() {
   const [activePage, setActivePage] = useState('dashboard')
-  const [role, setRole] = useState('user') // 'admin' | 'user'
+  const [role, setRole] = useState('user')
   
-  // App-wide data states
   const [transactions, setTransactions] = useState(initialTransactions)
   const [cards, setCards] = useState(initialCards)
   const [categories, setCategories] = useState(initialCategories)

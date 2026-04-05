@@ -26,7 +26,7 @@ export default function Header({ activePage, setActivePage }) {
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',
         padding: '0 24px', height: 64, maxWidth: 1536, margin: '0 auto',
       }}>
-        {/* Logo + Nav */}
+        
         <div style={{ display: 'flex', alignItems: 'center', gap: 32 }}>
           <span style={{
             fontSize: 20, fontWeight: 800,
@@ -65,9 +65,9 @@ export default function Header({ activePage, setActivePage }) {
           </nav>
         </div>
 
-        {/* Actions */}
+     
         <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-          {/* RBAC Toggle (Demo) */}
+          
           <button 
             onClick={toggleRole}
             style={{

@@ -29,7 +29,7 @@ export default function Profile() {
       </section>
 
       <div style={{ display: 'grid', gap: 24 }}>
-        {/* Settings Block */}
+
         <div className="glass-panel" style={{ padding: 32, borderRadius: 24 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 24, paddingBottom: 16, borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
             Account Settings
@@ -52,7 +52,7 @@ export default function Profile() {
           </div>
         </div>
 
-        {/* Preferences Block */}
+
         <div className="glass-panel" style={{ padding: 32, borderRadius: 24 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 24, paddingBottom: 16, borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
             Preferences

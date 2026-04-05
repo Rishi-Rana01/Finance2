@@ -17,22 +17,17 @@ export default function SpendingDonut() {
           style={{ width: 192, height: 192, transform: 'rotate(-90deg)' }}
           viewBox="0 0 100 100"
         >
-          {/* Background track */}
           <circle cx="50" cy="50" r="40" fill="none" stroke="#222222" strokeWidth="12" />
-          {/* Housing 60% */}
           <circle cx="50" cy="50" r="40" fill="none" stroke="#ff8800"
             strokeDasharray="251.2" strokeDashoffset="100.5"
             strokeLinecap="round" strokeWidth="12" />
-          {/* Dining 20% */}
           <circle cx="50" cy="50" r="40" fill="none" stroke="#ffb84d"
             strokeDasharray="251.2" strokeDashoffset="201"
             strokeLinecap="round" strokeWidth="12" />
-          {/* Tech 10% */}
           <circle cx="50" cy="50" r="40" fill="none" stroke="#ffc2b3"
             strokeDasharray="251.2" strokeDashoffset="230"
             strokeLinecap="round" strokeWidth="12" />
         </svg>
-        {/* Center label */}
         <div style={{
           position: 'absolute', display: 'flex', flexDirection: 'column',
           alignItems: 'center',
@@ -44,7 +39,6 @@ export default function SpendingDonut() {
         </div>
       </div>
 
-      {/* Legend */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: 16, marginTop: 16 }}>
         {segments.map(seg => (
           <div key={seg.label} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
