@@ -8,7 +8,7 @@ FinanceHQ is a premium, modern finance dashboard application designed with a stu
 
 ## 📸 Screenshots
 
-![FinanceHQ Dashboard](./public/screenshot.png)
+![FinanceHQ Dashboard](./financehq-app/public/screenshot.png)
 
 ## 🚀 Overview & Approach
 
