@@ -1,5 +1,7 @@
 # FinanceHQ
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-finance--dfd4b.web.app-ff8800?style=for-the-badge&logo=firebase)](https://finance-dfd4b.web.app)
+
 FinanceHQ is a premium, modern finance dashboard application designed with a stunning "Luminescent" dark-themed glassmorphic interface. It provides users with a comprehensive overview of their financial health, budget tracking, wallet management, and account settings.
 
 **Note:** _This project was 80% built by me, with 20% assistance from AI (for mock data generation and UI boilerplate adjustments)._
@@ -61,5 +63,12 @@ financehq-app/
 To simulate a fully active financial account, AI was utilized to generate realistic dummy data representing months of financial activity, including:
 *   **Mock Transactions:** A diverse mix of completed and pending dummy transactions (e.g., Apple Store, Delta Airlines, Salary Deposits) complete with realistic merchant names, categories, and varying numeric amounts.
 *   **Mock Budget Allocations:** Seed data for "Housing", "Dining", "Tech & Travel" to populate the donut and distribution charts.
-*   **AI Financial Insights:** The dashboard surfaces generated "AI Insights", highlighting optimized spending habits, smart savings suggestions, and dining alerts powered by the mock spending activity. 
+*   **AI Financial Insights:** The dashboard surfaces generated "AI Insights", highlighting optimized spending habits, smart savings suggestions, and dining alerts powered by the mock spending activity.
 
+## 🚀 Deployment & CI/CD
+
+This application is continuously deployed to **Firebase Hosting**. 
+
+A complete CI/CD pipeline has been established using **GitHub Actions**.
+* **Live Deployment**: Pushes to the `main` branch automatically trigger the `firebase-hosting-merge.yml` workflow, which installs dependencies, builds the production Vite bundle, and deploys directly to the live site.
+* **Preview Channels**: Opening a Pull Request automatically triggers the `firebase-hosting-pull-request.yml` workflow to generate a temporary preview URL for testing changes before merging into production.
