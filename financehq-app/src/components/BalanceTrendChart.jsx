@@ -54,11 +54,11 @@ export default function BalanceTrendChart({ activeRange }) {
         <AreaChart data={data} margin={{ top: 10, right: 0, left: 0, bottom: 0 }}>
           <defs>
             <linearGradient id="colorBalance" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="var(--primary)" stopOpacity={0.4} />
+              <stop offset="5%" stopColor="var(--primary)" stopOpacity={0.8} />
               <stop offset="95%" stopColor="var(--primary)" stopOpacity={0} />
             </linearGradient>
           </defs>
-          <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="rgba(56,71,109,0.15)" />
+          <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="rgba(255,255,255,0.05)" />
           <XAxis 
             dataKey="name" 
             axisLine={false} 

@@ -114,7 +114,7 @@ export default function Dashboard() {
             Export JSON
           </button>
           <button 
-            className="btn-primary" 
+            className="btn-primary btn-breathing" 
             onClick={() => setIsTxModalOpen(true)}
             style={{ 
               padding: '10px 20px', borderRadius: 12, fontSize: 14,
@@ -212,7 +212,7 @@ export default function Dashboard() {
                   onChange={e => setNewTxMerchant(e.target.value)}
                   style={{
                     width: '100%', padding: '12px 16px', borderRadius: 12,
-                    background: 'var(--surface-variant)', border: '1px solid rgba(56,71,109,0.3)',
+                    background: 'var(--surface-variant)', border: '1px solid rgba(255,255,255,0.1)',
                     color: 'var(--on-surface)', fontSize: 15,
                   }}
                   placeholder="e.g. Amazon"
@@ -226,7 +226,7 @@ export default function Dashboard() {
                   onChange={e => setNewTxAmount(e.target.value)}
                   style={{
                     width: '100%', padding: '12px 16px', borderRadius: 12,
-                    background: 'var(--surface-variant)', border: '1px solid rgba(56,71,109,0.3)',
+                    background: 'var(--surface-variant)', border: '1px solid rgba(255,255,255,0.1)',
                     color: 'var(--on-surface)', fontSize: 15,
                   }}
                   placeholder="e.g. 45.00"

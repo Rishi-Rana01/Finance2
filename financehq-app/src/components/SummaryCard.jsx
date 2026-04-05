@@ -10,8 +10,8 @@ export default function SummaryCard({ label, value, change, changeType, changeLa
       {/* Background icon */}
       <div style={{
         position: 'absolute', top: 0, right: 0, padding: 24,
-        opacity: 0.2, transition: 'opacity 0.3s',
-        fontSize: 48,
+        opacity: 0.1, transition: 'opacity 0.3s',
+        fontSize: 56,
       }}
         onMouseEnter={e => e.currentTarget.style.opacity = 0.4}
         onMouseLeave={e => e.currentTarget.style.opacity = 0.2}
@@ -26,8 +26,8 @@ export default function SummaryCard({ label, value, change, changeType, changeLa
         {label}
       </p>
       <h2 style={{
-        fontSize: 28, fontWeight: 700, marginTop: 8, color: 'var(--on-surface)',
-        letterSpacing: '-0.02em',
+        fontSize: 'clamp(2rem, 4.5vw, 2.75rem)', fontWeight: 800, marginTop: 8, color: 'var(--on-surface)',
+        letterSpacing: '-0.03em', lineHeight: 1.1,
       }}>
         {value}
       </h2>
@@ -37,7 +37,7 @@ export default function SummaryCard({ label, value, change, changeType, changeLa
         >
           {change}
         </span>
-        <span style={{ fontSize: 11, color: 'var(--on-surface-variant)' }}>
+        <span style={{ fontSize: 12, color: 'var(--on-surface-variant)', letterSpacing: '0.02em', opacity: 0.9 }}>
           {changeLabel}
         </span>
       </div>

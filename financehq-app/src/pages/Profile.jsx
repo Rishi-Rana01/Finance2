@@ -31,7 +31,7 @@ export default function Profile() {
       <div style={{ display: 'grid', gap: 24 }}>
         {/* Settings Block */}
         <div className="glass-panel" style={{ padding: 32, borderRadius: 24 }}>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 24, paddingBottom: 16, borderBottom: '1px solid rgba(56,71,109,0.2)' }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 24, paddingBottom: 16, borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
             Account Settings
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
@@ -54,7 +54,7 @@ export default function Profile() {
 
         {/* Preferences Block */}
         <div className="glass-panel" style={{ padding: 32, borderRadius: 24 }}>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 24, paddingBottom: 16, borderBottom: '1px solid rgba(56,71,109,0.2)' }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 24, paddingBottom: 16, borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
             Preferences
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

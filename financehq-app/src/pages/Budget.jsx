@@ -76,7 +76,7 @@ export default function Budget() {
               </p>
               <p style={{ fontSize: 20, fontWeight: 600, color: 'var(--primary)' }}>$15,000</p>
             </div>
-            <div style={{ width: 1, height: 40, background: 'rgba(56,71,109,0.2)' }} />
+            <div style={{ width: 1, height: 40, background: 'rgba(255,255,255,0.1)' }} />
             <div>
               <p style={{ fontSize: '0.6875rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--on-surface-variant)' }}>
                 Total Spent
@@ -87,7 +87,7 @@ export default function Budget() {
         </div>
         <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
           <button 
-            className="btn-primary neon-glow-primary" 
+            className="btn-primary neon-glow-primary btn-breathing" 
             onClick={() => setIsModalOpen(true)}
             style={{
               padding: '16px 24px', borderRadius: 6, fontSize: 15,
@@ -148,7 +148,7 @@ export default function Budget() {
                   onChange={e => setNewCatName(e.target.value)}
                   style={{
                     width: '100%', padding: '12px 16px', borderRadius: 12,
-                    background: 'var(--surface-variant)', border: '1px solid rgba(56,71,109,0.3)',
+                    background: 'var(--surface-variant)', border: '1px solid rgba(255,255,255,0.1)',
                     color: 'var(--on-surface)', fontSize: 15,
                   }}
                   placeholder="e.g. Travel"
@@ -162,7 +162,7 @@ export default function Budget() {
                   onChange={e => setNewCatBudget(e.target.value)}
                   style={{
                     width: '100%', padding: '12px 16px', borderRadius: 12,
-                    background: 'var(--surface-variant)', border: '1px solid rgba(56,71,109,0.3)',
+                    background: 'var(--surface-variant)', border: '1px solid rgba(255,255,255,0.1)',
                     color: 'var(--on-surface)', fontSize: 15,
                   }}
                   placeholder="e.g. 500"
